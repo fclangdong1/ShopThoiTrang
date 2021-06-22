@@ -1,0 +1,126 @@
+@import "flex";
+.section-sign {
+    min-height: 45rem;
+    background-image: url(../img/login2.png);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    .form-background {
+        background: white;
+        // width: 20rem;
+        border-radius: 1rem;
+        padding: 1rem;
+        border: 1px solid #ff6801;
+        > h3 {
+            text-align: center;
+            padding-top: 2rem;
+            font-weight: 700;
+        }
+        .icon{
+            margin: 20px 0;
+            text-align: center;
+            >a{
+                border: 1px solid #DDDDDD;
+                border-radius: 50%;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 5px;
+                height: 40px;
+                width: 40px;
+                text-decoration: none;
+                &:hover{
+                    color: white;
+                    background: #ff6801;
+                }
+            }
+        }
+        .form {
+            #sign-form {
+                width: 100%;
+                .form-group {
+                    display: flex;
+                    width: 100%;
+                    .form-item {
+                        > h2 {
+                            font-weight: 700;
+                            // color: #ff6801;
+                            font-size: 26px;
+                            margin: 0.5rem 0;
+                        }
+                        > label {
+                            font-size: 16px;
+                            font-weight: 700;
+                        }
+                        > input {
+                        }
+                        .btn-login {
+                            padding: 0.7rem 1.5rem;
+                            border: 1px solid #ff6801;
+                            border-radius: 5px;
+                            background: white;
+                            font-size: 14px;
+                            font-weight: 700;
+                            color: #ff6801;
+                            cursor: pointer;
+                            &:hover {
+                                border: 1px solid #ff6801;
+                                color: white;
+                                background: #ff6801;
+                            }
+                        }
+                        .miss {
+                            width: 100%;
+                            justify-content: center;
+                            display: flex;
+                            padding: 0.7rem 1.5rem;
+                            border: 1px solid #ff6801;
+                            background: white;
+                            border-radius: 5px;
+                            font-size: 14px;
+                            font-weight: 700;
+                            color: #ff6801;
+                            text-decoration: none;
+                            &:hover {
+                                border: 1px solid #ff6801;
+                                color: white;
+                                background: #ff6801;
+                            }
+                        }
+                        .miss {
+                            justify-content: center;
+                            display: flex;
+                            padding: 0.7rem 1.5rem;
+                            border: 1px solid #ff6801;
+                            background: white;
+                            border-radius: 5px;
+                            font-size: 14px;
+                            font-weight: 700;
+                            color: #ff6801;
+                            text-decoration: none;
+                            &:hover {
+                                border: 1px solid #ff6801;
+                                color: white;
+                                background: #ff6801;
+                            }
+                        }
+                        .creat {
+                            padding: 0.8rem 4.8rem;
+                            border: 1px solid #ff6801;
+                            border-radius: 7px;
+                            font-size: 16px;
+                            color: #ff6801;
+                            text-decoration: none;
+                            font-weight: 600;
+                            &:hover {
+                                border: 1px solid #ff6801;
+                                color: white;
+                                background: #ff6801;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

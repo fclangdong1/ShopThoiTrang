@@ -1,0 +1,1144 @@
+@import "reset";
+@import "flex";
+// @import "media";
+.container{
+    @media (max-width : 576px) {
+        max-width: 100%;
+    }
+}
+header{
+    &.fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+        background: white;
+        .mainmenu{
+            .menu-besto-two{
+                a{
+                    color: #ff6801 !important;
+                }
+            }
+        }
+    }
+    background-color: rgb(58, 54, 54);
+    .header-top{
+        .container{
+            .row{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: nowrap;
+                width: 100%;
+                .header-logo{
+                    
+                    .logo{
+                        .theme-logo{
+                            >img{
+                                max-width: 11rem;
+                                height: 2.5rem;
+                            }
+                        }
+                    }
+                }
+                .mainmenu{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .menu-besto-two {
+                        nav {
+                            .close-menu{
+                                display: none;
+                            }
+                            >ul {
+                                
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                .home {
+                                    position: relative;
+                                    padding-left: 15px;
+            
+                                    &:hover {
+                                        >ul.dropdown-home {
+                                            display: block;
+                                        }
+                                    }
+            
+                                    >a {
+                                        padding-left: 0.5rem;
+                                        font-weight: 700;
+                                        // color: rgb(247, 236, 236);
+                                        color: #ff6801;
+                                        font-size: 1.1rem;
+                                        &:hover {
+                                            color: #ff6801;
+                                        }
+                                        .fas{
+                                            padding-left: 0.2rem;
+                                            font-size: 1rem;
+                                            font-style: normal;
+                                        }
+                                    }
+            
+                                    .dropdown-home {
+                                        z-index: 10;
+                                        position: absolute;
+                                        top: 30px;
+                                        left: 0;
+                                        content: "";
+                                        margin-top: 15px;
+                                        display: none;
+                                        width: 100%;
+                                        padding-left: 8px;
+                                        line-height: 30px;
+                                        padding: 5px 0;
+            
+                                        >li {
+                                            width: 250px;
+                                            background: white;
+            
+                                            >a {
+                                                color: #222121;
+                                                font-size: 16px;
+                                                font-weight: 380;
+                                                padding-left: 10px;
+            
+                                                &:hover {
+                                                    color: #ff6801;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+            
+                                .shop {
+                                    position: relative;
+                                    padding-left: 15px;
+            
+                                    &:hover {
+                                        >ul.dropdown-shop {
+                                            display: flex;
+                                        }
+                                    }
+            
+                                    >a {
+                                        padding-left: 0.5rem;
+                                        font-weight: 700;
+                                        // color: rgb(247, 236, 236);
+                                        color: #ff6801;
+                                        font-size: 1.1rem;
+            
+                                        &:hover {
+                                            color: #ff6801;
+                                        }
+                                    }
+            
+                                    .dropdown-shop {
+                                        z-index: 2;
+                                        position: absolute;
+                                        content: "";
+                                        top: 90%;
+                                        left: -105%;
+                                        margin-top: 15px;
+                                        width: 100%;
+                                        line-height: 30px;
+                                        padding: 8px 5px 0;
+                                        display: none;
+            
+                                        // opacity: 0;
+                                        >li {
+                                            justify-content: space-between;
+                                            align-items: flex-start;
+                                            padding-left: 20px;
+                                            background: white;
+                                            padding-bottom: 15px;
+            
+                                            h2 {
+                                                font-weight: 700;
+                                                color: #ff6801;
+                                                font-size: 15px;
+                                            }
+            
+                                            .dropdown-tablate {
+                                                width: 180px;
+            
+                                                >li {
+                                                    >a {
+                                                        font-size: 15px;
+                                                        color: #222121;
+                                                        font-weight: 700;
+            
+                                                        &:hover {
+                                                            color: #ff6801;
+                                                        }
+                                                    }
+                                                }
+                                            }
+            
+                                            .dropdown-tablate1 {
+                                                width: 250px;
+            
+                                                >li {
+                                                    >a {
+                                                        font-size: 15px;
+                                                        color: #222121;
+                                                        font-weight: 700;
+            
+                                                        &:hover {
+                                                            color: #ff6801;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+            
+                                .collections {
+                                    position: relative;
+                                    padding-left: 15px;
+            
+                                    &:hover {
+                                        >ul.dropdown-collections {
+                                            display: flex;
+                                        }
+                                    }
+            
+                                    >a {
+                                        padding-left: 0.5rem;
+                                        font-weight: 700;
+                                        // color: rgb(247, 236, 236);
+                                        color: #ff6801;
+                                        font-size: 1.1rem;
+            
+                                        &:hover {
+                                            color: #ff6801;
+                                        }
+                                    }
+            
+                                    .dropdown-collections {
+                                        position: absolute;
+                                        z-index: 2;
+                                        top: 80%;
+                                        left: -170%;
+                                        content: "";
+                                        margin-top: 1rem;
+                                        // opacity: 0;
+                                        display: none;
+            
+                                        >li {
+                                            background: white;
+            
+                                            >a {
+                                                img {
+                                                    padding: 15px;
+                                                    width: 210px;
+                                                    height: 275px;
+                                                }
+                                            }
+            
+                                        }
+                                    }
+                                }
+            
+                                .buy-besto {
+            
+                                    >a {
+                                        position: relative;
+                                        padding: 15px;
+                                        text-transform: capitalize;
+                                        font-weight: 500;
+            
+                                        .hot {
+                                            position: absolute;
+                                            top: 0px;
+                                            color: #fff;
+                                            border-radius: 2px;
+                                            font-size: 8px;
+                                            font-weight: 500;
+                                            padding: 2px 4px;
+                                            letter-spacing: 0.5px;
+                                            right: 1px;
+                                            background: #ff6801 none repeat scroll 0 0;
+            
+                                            &:before {
+                                                content: "";
+                                                position: absolute;
+                                                bottom: -4px;
+                                                border-top: 5px solid #ff6801;
+                                                left: 0;
+                                                width: 0;
+                                                height: 0;
+                                                border: 0 solid transparent;
+                                                border-right-width: 6px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    // bootrap css
+                    @media (max-width : 1230px) {
+                        display:none;
+                        z-index: 9;
+                        .menu-besto-two{
+                            @media (max-width : 1230px) {
+                                position: relative;
+                            }
+                            >nav{
+                                @media (max-width : 1230px) {
+                                    position: fixed;
+                                    top: 0%;
+                                    left: 0%;
+                                    background: white;
+                                    >ul{
+                                        display: block;
+                                        max-height: 100%;
+                                        width: 300px;
+                                        .home{
+                                            text-align: center;
+                                            >a{
+                                                color: black;
+                                            }
+                                        }
+                                        .shop{
+                                            text-align: center;
+                                            >a{
+                                                color: black;
+                                            }
+                                        }
+                                        .collections{
+                                            text-align: center;
+                                            >a{
+                                                color: black;
+                                            }
+                                        }
+                                    }
+                                    .close-menu{
+                                        display: flex;        
+                                        justify-content: flex-end;
+                                        padding-top: 1rem;
+                                        padding-right: 1.5rem;
+                                        >a{
+                                            font-size: 1.7rem;
+                                            color: black;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .header-linkicon{
+                    .right-blok-box{
+                        // display: flex;
+                        text-align: center;
+                        justify-content: flex-end;
+                        .search-wrap{
+                            margin-right: 1rem;
+                            cursor: pointer;
+                            border: none;
+                            button{
+                                font-size: 1.5rem;
+                                >.fas{
+                                    color: #ff6801;
+                                    // font-size: 1.5rem;
+                                }
+                            }
+                        }
+                        .navbar-toggler{
+                            display: none;
+                            margin-right: 1rem;
+                            font-size: 1.5rem;
+                            @media (max-width : 1230px) {
+                                display: block;
+                                // max-width: 75%;
+                            }
+                            >.fas{
+                                color: #ff6801;
+                            }
+                        }
+                        .acount{
+                            margin-right: 1rem;
+                            >a{
+                                color: #ff6801;
+                                font-size: 1.5rem;
+                            }
+                        }
+                        .shopping{
+                            position: relative;
+                            &:hover {
+                                .far {
+                                    color: #ff6801;
+                                }
+        
+                                >.change {
+                                    background: black;
+                                }
+                            }
+                            >a{
+                                color: #ff6801;
+                                font-size: 1.5rem;
+                            }
+                            >.change {
+                                position: absolute;
+                                content: "";
+                                top: 0px;
+                                left: 45%;
+                                background: #ff6801;
+                                width: 20px;
+                                height: 20px;
+                                border-radius: 50%;
+                                font-size: 14px;
+                                font-weight: 800;
+                                align-items: center;
+                                text-align: center;
+                                justify-content: center;
+                                display: flex;
+                                color: #dbd1d1;
+                            }
+
+                        }
+                        .fade{
+                            .modal-content{
+                                .main-search-active{
+                                    .sidebar-search-input{
+                                        .search-bar{
+                                            display: flex;
+                                            align-items: center;
+                                            .form-search{
+                                                width: 100%;
+                                                position: relative;
+                                                padding: 0.5rem 0;
+                                                >input{
+                                                    padding-left: 1rem;
+                                                    width: 100%;
+                                                    height: 40px;
+                                                    border: 1px solid #918d8b;
+                                                    border-radius: 3px;
+                                                }
+                                                >button{
+                                                    font-size: 18px;
+                                                    position: absolute;
+                                                    top: 9px;
+                                                    right: 1px;
+                                                    height: 38px;
+                                                    padding: 5px 13px;
+                                                    cursor: pointer;
+                                                    text-align: center;
+                                                    color: #fff;
+                                                    border: none;
+                                                    border-radius: 3px;
+                                                    background: #ff6801;
+                                                }
+                                            }
+                                            .search-close{
+                                                padding-left: 0.9rem;
+                                                >a{
+                                                    font-size: 2rem;
+                                                    color: black;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            @media (max-width : 576px) {
+                max-width: 100%;
+            }
+        }
+    }
+}
+// <!-- start totop -->
+.totopone {
+    .totop {
+        padding: 6px 10px;
+        border-radius: 3px;
+        border: 2px solid #ff6801;
+        color: #ff6801;
+        font-size: 12px;
+        opacity: 0;
+        display: inline-block;
+        position: fixed;
+        right: 0;
+        bottom: -10px;
+
+        //transition:  all o.4s;
+        .fas {
+            font-size: 20px;
+        }
+
+        &.show {
+            opacity: 1;
+            z-index: 5;
+            cursor: pointer;
+            right: 30px;
+            transition: all 0.4s;
+            bottom: 50px;
+
+            &:hover {
+                color: white;
+                background: #ff6801;
+            }
+        }
+    }
+
+}
+
+// <!-- end totop -->
+.banner {
+    .house {
+        position: relative;
+        .owl-item.active {
+            img {
+                width: 100%;
+                height: 520px;
+            }
+
+            .item-content {
+                position: absolute;
+                top: 30%;
+                left: 30%;
+
+                >span {
+                    animation: floatY 0.4s 1s forwards;
+                    opacity: 0;
+                    color: #f20000;
+                    font-size: 18px;
+                }
+
+                >h2 {
+                    animation: floatY 0.4s 1.5s forwards;
+                    opacity: 0;
+                    color: #333333;
+                    margin-top: 15px;
+                    font-size: 26px;
+                    line-height: 40px;
+                }
+
+                >p {
+                    animation: floatY 0.4s 2s forwards;
+                    opacity: 0;
+                    margin-top: 18px;
+                    font-size: 18px;
+                    color: #333333;
+                }
+
+                >h3 {
+                    animation: floatY 0.4s 2.5s forwards;
+                    opacity: 0;
+                    color: #333333;
+                    font-size: 24px;
+                    padding-bottom: 15px;
+                }
+
+                >.shopnow {
+                    animation: floatY 0.4s 3s forwards;
+                    opacity: 0;
+                    padding: 13px 25px;
+                    color: #ff6801;
+                    border-radius: 2px;
+                    font-weight: bold;
+                    font-size: 20px;
+                    border: 1px solid #ff6801;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: white;
+                        background: #ff6801;
+                    }
+                }
+            }
+        }
+
+        .owl-dots {
+            position: absolute;
+            bottom: 8%;
+            left: 50%;
+
+            .owl-dot.active span {
+                background: black;
+            }
+
+            .owl-dot span {
+                background: #ff6801;
+                height: 6px;
+                width: 6px;
+            }
+        }
+
+        .owl-nav {
+            position: absolute;
+            top: 50%;
+            display: flex;
+            width: 100%;
+            padding: 0 30px;
+            justify-content: space-between;
+
+            button.owl-prev {
+                font-size: 35px;
+                font-family: 'themify';
+                left: 30px;
+                background: none;
+                color: inherit;
+
+                &:hover {
+                    color: #ff6801;
+                }
+            }
+
+            button.owl-next {
+                font-size: 35px;
+                font-family: 'themify';
+                right: 30px;
+                background: none;
+                color: inherit;
+
+                &:hover {
+                    color: #ff6801;
+                }
+            }
+        }
+
+    }
+    // bootraps css
+    @media (max-width : 992px) {
+        .house{
+            .owl-stage-outer{
+                .owl-stage{
+                    .owl-item.active{
+                        >img{
+                            width: 100%;
+                            height: 450px;
+                            background-position: left;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width : 576px) {
+        .house{
+            .owl-dots{
+                display: none;
+            }
+        }
+    }
+    
+}
+@keyframes floatY {
+    from {
+        transform: translateY(20px);
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+section{
+    .shop-section{
+        .container{
+            .row{
+                .services {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+                    padding: 0.5rem 0;
+                    .services-item {
+                        display: flex;
+                        padding-left: 1.9rem;
+                        align-items: center;
+                        padding: 0.7rem 0;
+                        >a {
+                            >.fas,
+                            >.far {
+                                color: #ff6801;
+                                font-size: 2.6rem;
+                                transition: all 0.5s ease-in-out 0s;
+    
+                                &:hover {
+                                    transform: rotateY(180deg);
+                                    transition: all 0.5s ease-in-out 0s;
+                                }
+                            }
+                        }
+    
+                        .services-text {
+                            padding-left: 1rem;
+                            
+                            >h5 {
+                                // font-weight: bold;
+                                font-size: 1rem;
+                                font-weight: 600;
+                                text-transform: uppercase;
+                            }
+    
+                            >p {
+                                color: #999;
+                                margin-bottom: 0px;
+                                font-size: 16px;
+                                line-height: 26px;
+                            }
+                        }
+                    }
+    
+                    .boder-right {
+                        padding-right: 20px;
+                        border-right: 1px solid #cac3c3;
+                    }
+                }
+                // bootstrap css
+                @media (max-width : 992px) {
+                    max-width: 992px;
+                    .services-item{
+                        border-bottom: 1px solid #918d8b;
+                        // padding: 15px 0;
+                        // border-right: none !important;   
+                        // margin: 0 -10px;
+                    }
+                    .boder-right {
+                        padding-right: 0px !important;
+                        border-right: none !important;
+                    }
+                }
+            }
+            @media (max-width : 576px) {
+                max-width: 100%;
+            }
+        }
+    }
+    .shop-section-banner{
+        padding: 2rem 0;
+        background: white;
+        .container{
+            .row{
+                .banner-section{
+                    .banner-section{
+                        position: relative;
+                        margin-bottom: 0.5rem;
+                        &:hover{
+                            .banner-content{
+                                left: 12%;
+                                visibility: visible;
+                                
+                            }
+                        }
+                        &:hover:after {
+                            width: 90%;
+                        }
+                        .banner-img{
+                            >img {
+                                width: 100%;
+                                height: 26rem;
+                            }
+                        }
+                        &::after {
+                            content: "";
+                            top: 0;
+                            right: 5%;
+                            width: 0;
+                            position: absolute;
+                            margin: 0;
+                            height: 100%;
+                            transition: all 0.5s;
+                            background: rgba(73, 71, 71, 0.15);
+                        }
+                        .banner-content{
+                            visibility: hidden;
+                            position: absolute;
+                            top: 50%;
+                            left: 6%;
+                            line-height: 1.5rem;
+                            transition: all 0.3s;
+                            z-index: 1;
+                            >h3{
+                                font-size: 1.5rem;
+                                width: 100%;
+                                flex-wrap: wrap;
+                                font-weight: 700;
+                                color: white;
+                            }
+                            p{
+                                color: white;
+                                font-size: 1rem;
+                            }
+                            a{
+                                padding: 0.4rem 0.5rem;
+                                color: white;
+                                background: #ff6801;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
+            }
+            @media (max-width : 576px) {
+                padding: 0 5rem;
+            }
+            @media (max-width : 992px) {
+                padding: 0 5rem;
+            }
+        }
+    }
+    .shop-section-content{
+        padding-top: 2rem;
+        background: white;
+        .container{
+            .row{
+                .tab{
+                    .section-title{
+                        text-align: center;
+                        >h2{
+                            text-transform: capitalize;
+                            font-weight: 600;
+                            font-size: 24px;
+                            line-height: 1;
+                        }
+                        >.nav-tabs{
+                            border-bottom: none;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin-top: 1rem;
+                            >.nav-item{
+                                margin-right: 1.7rem;
+                                text-decoration: none;
+                                font-size: 1.2rem;
+                                color: rgba(0, 0, 0, 0.87);
+                                font-weight: 600;
+                                border: none;
+                                outline: none;
+                                cursor: pointer;
+                                position: relative;
+                                &:hover{
+                                    color: #ff6801;
+                                }
+                                &.active{
+                                    color:#ff6801;
+                                    &::after{
+                                        display: block;
+                                    }
+                                }
+                                &::after{
+                                    position: absolute;
+                                    content: "";
+                                    bottom: -50%;
+                                    right: 0;
+                                    display: none;
+                                    width: 100%;
+                                    height: 0.2rem;
+                                    background: #ff6801;
+                                }
+                            }
+                        }
+                    }
+                    .tab-content{
+                        padding-top: 3rem;
+                        .item-container{
+                            &.active{
+                                display: block;
+                            }
+                            display: none;
+                            .item-products {
+                                &:hover{
+                                    .images-products {
+
+                                        // transform: scale(1);
+                                        .image-two {
+                                            transform: scale(1);
+                                        }
+
+                                        .love {
+                                            right: 20px;
+                                            opacity: 1;
+                                            transition: 0.4s ease;
+
+                                            .love-one {
+                                                visibility: visible;
+                                            }
+                                        }
+
+                                        .views {
+                                            right: 20px;
+                                            opacity: 1;
+                                            transition: 0.4s ease;
+
+                                            .views-one {
+                                                visibility: visible;
+
+
+                                            }
+                                        }
+                                    }
+
+                                    .text-products {
+                                        .addtocart {
+                                            bottom: 0px;
+                                            transition: all 0.4s;
+                                            z-index: 10;
+
+                                            .shopping {
+                                                visibility: visible;
+
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .item-products {
+                                padding-top: 0 0.5rem;
+                                text-align: center;
+                                height: 100%;
+    
+                                .text-products {
+                                    margin: 10px;
+    
+                                    >h3 {
+                                        padding: 5px 0;
+                                        text-align: center;
+                                        align-items: center;
+    
+                                        &:hover {
+                                            >a {
+                                                color: #ff6801;
+                                            }
+                                        }
+    
+                                        a {
+                                            color: #000;
+                                            font-size: 15px;
+                                            font-weight: 300;
+                                            padding-left: 10px;
+                                        }
+                                    }
+    
+                                    >p {
+                                        padding-bottom: 5px;
+                                        color: #ebc10a;
+                                        text-align: center;
+                                        align-items: center;
+                                    }
+    
+                                    .price-item {
+                                        text-align: center;
+                                        align-items: center;
+                                        padding-bottom: 70px;
+    
+                                        .price {
+                                            font-size: 14px;
+                                            color: #333;
+                                            font-weight: bold;
+                                        }
+    
+                                        .price-discount {
+                                            text-decoration: line-through;
+                                            color: #5c5757;
+                                            font-size: 14px;
+                                        }
+                                    }
+    
+                                    .addtocart {
+                                        visibility: hidden;
+                                        width: 100%;
+                                        position: absolute;
+                                        bottom: -10px;
+                                        left: 0;
+                                        background-color: #fff;
+                                        transition: 0.4s ease;
+                                        padding: 0 15px 15px;
+    
+                                        .shopping {
+                                            padding: 7px 18px;
+                                            border-radius: 1px;
+                                            border: 1px solid #c0afaf;
+    
+                                            &:hover {
+                                                font-weight: 300;
+                                                border: 1px solid#ff6801;
+                                                color: white;
+                                                background: #ff6801;
+                                            }
+                                        }
+                                    }
+                                }
+    
+                                .images-products {
+                                    background: black;
+                                    position: relative;
+    
+                                    >a {
+                                        >.image-one {
+                                            width: 100%;
+                                            height: 100%;
+                                        }
+    
+                                        >.image-two {
+                                            width: 100%;
+                                            height: 100%;
+                                            position: absolute;
+                                            bottom: 0;
+                                            right: 0;
+                                            transform: scale(0.2);
+                                            max-width: 100%;
+                                            transform-origin: 100% 100%;
+                                            transition: all 0.4s;
+                                        }
+                                    }
+    
+                                    .love {
+                                        position: absolute;
+                                        visibility: hidden;
+                                        top: 5%;
+                                        right: 30px;
+                                        opacity: 0;
+                                        transition: 0.4s ease;
+    
+                                        .love-one {
+                                            width: 30px;
+                                            height: 30px;
+                                            font-size: 14px;
+                                            align-items: center;
+                                            display: flex;
+                                            justify-content: center;
+                                            border: 1px solid black;
+                                            border-radius: 50%;
+    
+                                            &:hover {
+                                                background: #e24c10;
+                                                color: white;
+                                                border: 1px solid #e24c10;
+                                            }
+                                        }
+                                    }
+    
+                                    .views {
+                                        position: absolute;
+                                        top: 18%;
+                                        right: 30px;
+                                        visibility: hidden;
+                                        transition: 0.4s ease;
+                                        opacity: 0;
+    
+                                        .views-one {
+                                            width: 30px;
+                                            height: 30px;
+                                            font-size: 14px;
+                                            align-items: center;
+                                            display: flex;
+                                            justify-content: center;
+                                            border: 1px solid black;
+                                            border-radius: 50%;
+    
+                                            &:hover {
+                                                background: #e24c10;
+                                                border: 1px solid #e24c10;
+                                                color: white;
+                                            }
+                                        }
+                                    }
+                                }
+    
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+        @media (max-width : 576px) {
+            padding: 0 4rem;
+        }
+    }
+}
+footer{
+    // <!-- start subscribe -->
+    background: #fbfbfb;
+    .subscribe {
+        padding: 1rem 0;
+        .container {
+            .email-subscribe{
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                .subscribe-one {
+                    width: 60%;
+                    margin: 0 auto;
+                    >h1 {
+                        font-size: 20px;
+                        color: #242222;
+                        // padding-bottom: 15px;
+                        font-weight: 700;
+                    }
+    
+                    >p {
+                        padding-bottom: 20px;
+                        color: rgb(49, 47, 47);
+                    }
+                    .contact-form{
+                        .input-subscribe {
+                            position: relative;
+                            >input {
+                                font-size: 13px;
+                                height: 100%;
+                                padding: 12px 15px;
+                                border: 1px solid #e2e2e2;
+                                width: 100%;
+                            }
+        
+                            >button {
+                                cursor: pointer;
+                                color: #fff;
+                                background: #ff6801;
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                border-radius: 0 3px 3px 0;
+                                padding: 10px 30px;
+                                height: 100%;
+                                &:hover {
+                                    background: #e2884c;
+                                }
+        
+                                a {
+                                    font-size: 16px;
+                                    color: white;
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+            @media (max-width : 992px) {
+                .email-subscribe{
+                    .subscribe-one{
+                        >h1{
+                            font-size: 16px;
+                        }
+                        .contact-form{
+                            .input-subscribe{
+                                >input{
+                                    padding: 12px 8px;
+                                }
+                                >button{
+                                    padding: 10px 25px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+// <!-- end subscribe -->
+}
