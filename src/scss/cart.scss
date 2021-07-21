@@ -1,0 +1,200 @@
+.cart-shopping{
+    padding: 1rem 0;
+    background:  white;
+    .container{
+        h2{
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-align: center;
+        }
+        .row{
+            .cart-left{
+                .shop-table{
+                    width: 100%;
+                    margin-bottom: 1em;
+                    thead{
+                        .cart_items{
+                            border-bottom: 3px solid #ececec;
+                            th{
+                                font-size: 1rem;
+                                padding: 0.5rem;
+                                text-transform: uppercase;
+                            }
+                            .product-price{
+
+                            }
+                            .product-quantity{
+
+                            }
+                            .product-subtotal{
+
+                            }
+                        }
+                    }
+                    tbody{
+                        border-right: 3px solid #ececec;
+                        border-bottom: 3px solid #ececec;
+                        >tr{
+                            .amount{
+                                .buttons_added{
+                                    display: flex;
+                                }
+                            }
+                            td{
+                                padding: 0.5rem;
+                            }
+                            .product-remove{
+                                width: 20px;
+                                padding: 0;
+                                a{
+                                    display: block;
+                                    width: 24px;
+                                    height: 24px;
+                                    font-size: 15px !important;
+                                    line-height: 19px !important;
+                                    border-radius: 100%;
+                                    color: rgb(204, 204, 204);
+                                    font-weight: bold;
+                                    text-align: center;
+                                    border: 2px solid currentColor;
+                                }
+                            }
+                            .product-thumbnail{
+                                padding-left: 0.3rem;
+                            }
+                            .product-thumbnail{
+                                // width: 50%;
+                                a{
+                                    flex-wrap: wrap;
+                                    color: black;
+                                    font-size:1rem ; 
+                                }                      
+                            }
+                            .product-price{
+                                width: 8rem;
+                                span{
+                                    bdo{
+                                        font-size: 1rem;
+                                        font-weight: 700;
+                                    }
+                                }
+                            }
+                            .amount{
+                                .buttons_added{
+                                    .is-form{
+                                        overflow:hidden;
+                                        position:relative;
+                                        background-color:#f9f9f9;
+                                        height:2rem;
+                                        width:2rem;
+                                        padding:0;
+                                        text-shadow:1px 1px 1px #fff;
+                                        border:1px solid #ddd;
+                                    }
+                                    .input-qty{
+                                        width: 2rem;
+                                        background-color:#fff;
+                                        height:2rem;
+                                        text-align:center;
+                                        font-size:1rem;
+                                        display:inline-block;
+                                        vertical-align:top;
+                                        margin:0;
+                                        border-top:1px solid #ddd;
+                                        border-bottom:1px solid #ddd;
+                                        border-left:0;
+                                        border-right:0;
+                                        padding:0;
+                                    }
+                                    .input-qty::-webkit-outer-spin-button,.input-qty::-webkit-inner-spin-button {
+                                        -webkit-appearance:none;
+                                        margin:0;
+                                    }
+                                }
+                            }
+                            .product-subtotal{
+                                width: 8rem;
+                                span{
+                                    bdo{
+                                        font-size: 1rem;
+                                        font-weight: 700;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .cart-right{
+                .cart-total{
+                    table{
+                        border-bottom: 3px solid #ececec;
+                        width: 100%;
+                    }
+                    table{
+                        margin-bottom: 1em;
+                        line-height: 2.6rem;
+                        tbody{
+                            tr{
+                                padding: 0.5rem;
+                                td{
+                                    text-align:right;
+                                }
+                            }
+                        }
+                    }
+                    .payment{
+                        margin:1.5rem 0;
+                        text-align: center;
+                        >.checkout-button{
+                            width: 100%;
+                            background: #ff6801;
+                            color: white;
+                            text-transform: uppercase;
+                            text-align: center;
+                            vertical-align: middle;
+                            line-height: 2.4rem;
+                            min-height: 2.5rem;
+                            font-weight: 500;
+                            padding: 1rem 2.2rem;
+                            text-decoration:none;
+                        }
+                    }
+                }
+                .checkout_coupon{
+                    .coupon{
+                        width: 100%;
+                        p{
+                            border-bottom: 3px solid #ececec;
+                        }
+                    }
+                    .input-text{
+                        border: 1px solid #ddd;
+                        border-radius: 2px;
+                        padding: 0 .75em;
+                        height: 2.507em;
+                        width: 100%;
+                        margin-bottom: 1rem;
+                    }
+                    .is-form{
+                        border: 1px solid #ddd;
+                        border-radius: 2px;
+                        padding: 0 .75em;
+                        height: 2.507em;
+                        width: 100%;
+                        background: #ff6801;
+                        color: white;
+                        font-weight: 700;
+                        border: 1px solid #ddd;
+                        cursor: pointer;
+                        &:hover{
+                            background: white;
+                            color: #ff6801;
+                            border: 1px solid #ff6801;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
